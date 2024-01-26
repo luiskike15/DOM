@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    
+    <h1>DOM(OBJETO DOCUMENTO)</h1>
+
+
+    <h2>Que es el DOM</h2>
+    <p>Es una representación estructurada del documento que permite
+        a los programas y scripts acceder y manipular
+        dinámicamente el contenido, la estructura y el
+         estilo de un documento. Es esencial para la interactividad
+        de las paginas webs.</p>
+    <p>Por ejemplo  si tenemos un texto 'Hola' parrafo y al dar 
+        clic a un boton cambiamos a otro texto que diga "Que tal".
+        Se puede realizar ello gracias al DOM.
+    </p>
+
+    
+    <h2>Obtener Elementos</h2>
+    <p>Para obtener elemento y poder modificarlo puede ser
+        mediante el id que se utilizaria (getElementById), 
+        si quiero agarrar un selector, es decir agarrar 
+        el primer elemento que coincide con un 
+        selector utilizaria (querySelector) o  si quieres agarrar 
+        varios elementos (querySelectorAll).
+    </p>
+
+    <p id="ejemplo1">Ejemplo pintare este getElementById a color</p>
+
+    <div id="ejemplo2">Ejemplo querySelector</div>
+
+    <br>
+
+    <div class=".ejemplo3"> Ejemplo de querySelectorAll</div>
+    <div class=".ejemplo3"> Ejemplo de querySelectorAll</div>
+    <div class=".ejemplo3"> Ejemplo de querySelectorAll</div>
+    <div class=".ejemplo3"> Ejemplo de querySelectorAll</div>
+
+    <h2>Que son los nodos</h2>
+
+    <p>Todo elemento html esta conformado por nodos, los mas
+        importante son los nodos de texto, nodo de elemento y nodo
+        de atributo.
+    </p>
+    <ul>
+        <li>Nodos de texto: Es todo el contenido que va dentro de una etiqueta p por ejemplo.</li>
+        <li>Nodos de elemento: Refiere a las etiquetas html </li>
+        <li>Nodos de atributo: Refiere  por ejemplo a las clases, id.</li>
+    </ul>
+
+    <h2>Text Content</h2>
+    <p>Es similar al innetHTML mas no igual, no solo trae todo el texto
+        de la etiqueta sino mas bien muestra todo lo que tiene , ademas el script.
+    </p>
+
+    <div id="ejemplo5">Ejemplo TextContent</div>
+
+
+    <h2>innerHTML</h2>
+     <p>Es una propiedad que permite ingresar y a la vez modificar el valor que hay dentro del html 
+        y poner un nuevo contenido, solo muestra el texto.
+     </p>
+      
+     <div class="ejemplo4">EjemploInnerHTML</div>
+
+
+    <h2>Estilos</h2>
+     <p>Mediante Javascript podemos modificar los estilos de las etiquetas html,
+        ya sea color fondo, color fuente, tamano, padding, etc. </p>
+
+    <div class="ejemplo6">
+        <h3> EJEMPLO ESTILOS </h3>
+    </div>    
+
+    <h2>DOM Traversing</h2>
+    <p>Sirve para moverse dentro del DOM, para acceder, buscar un dato o elemento. </p>
+
+    <div class="ejemplo7">
+        <ul>
+            <li><a href="#">Mama</a></li>
+            <li><a href="#">Papa</a></li>
+            <li><a href="#">HiJO</a></li>
+        </ul>
+    </div>
+
+    <h2>CreateElement</h2>
+    <p>Es un metodo para crear un elemento html  bajo el DOM y se crea
+        con createElement.
+    </p>
+
+    <div class="ejemplo8">
+    </div>
+
+
+
+
+<script src="./app.js"></script>
+</body>
+</html>
